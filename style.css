@@ -1,103 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-body {
-    font-family: Roboto, sans-serif;
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* FLEX CONTAINER */
-.projects {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-/* FIRST IMAGE */
-.image {
-    background-image: url("https://img.sanishtech.com/u/4ab95a5b8aaca0ad3a6bdcbe1a75215e.jpg");
+/* HERO AREA */
+.hero {
+    height: 40vh;
+    background-image: url("https://roboticsbiz.com/wp-content/uploads/2020/07/cloud-robotics.jpg");
     background-size: cover;
     background-position: center;
-    width: 200px;
-    height: 100px;
-    color: white;
+
+    /* FLEX CONTAINER */
     display: flex;
-    align-items: flex-end;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
-/* SECOND IMAGE */
-.secondimage {
-    background-image: url("https://img.sanishtech.com/u/51dca08720d8f9893e2ad0868be7e178.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 200px;
-    height: 100px;
-    color: white;
-    display: flex;
-    align-items: flex-end;
-    padding: 10px;
-}
-
-/* TEAM HEADING */
-.teams {
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: underline;
-}
-
-.robo {
-    background-image: url("https://img.sanishtech.com/u/9297a9bdbab96fe3559bbdfda0ec9b4a.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 250px;
-    height: 150px;
-    color: white;
-    display: flex;
-    align-items: flex-end;
-    padding: 8px;
-}
-
-.robo2 {
-    background-image: url("https://img.sanishtech.com/u/d7f7402f0439cfc863c88a30bd145d12.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 250px;
-    height: 150px;
-    color: white;
-    display: flex;
-    align-items: flex-end;
-    padding: 8px;
-}
-
-.heading {
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px 60px;
+    border-radius: 10px;
     text-align: center;
     color: white;
 }
 
-.team {
-    background-image: url("https://img.sanishtech.com/u/25c821918fdec8d11fb4e2a0282d5eb9.jpg");
-    background-size: cover;
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* MAIN CONTENT */
+.content {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.content h3 {
+    margin: 30px 0 15px;
+    font-weight: 500;
+}
+
+/* TEAM MEMBERS */
+.members {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* PROJECT FLEX CONTAINER */
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* PROJECT CARDS */
+.card {
     width: 300px;
     height: 200px;
-    color: white;
-    padding: 8px;
-}
-
-.style {
-    text-decoration: underline;
-}
-
-.bgimage {
-    background-image: url("https://roboticsbiz.com/wp-content/uploads/2025/05/cloud-robotics.jpg");
+    border-radius: 10px;
     background-size: cover;
-
-    width: 100vw;
+    background-position: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.members {
-    color: #b0aafd;
+
+
+/* TEAM IMAGE */
+.team-image {
+    width: 320px;
+    height: 220px;
+    margin: 30px auto;
+    background-image: url("https://img.sanishtech.com/u/25c821918fdec8d11fb4e2a0282d5eb9.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
 }
 
-.project {
-    text-decoration: underline;
-    color: #3900fd;
+.size {
+    height: 200px;
+    width: 100px;
+}
+
+.carousel-item {
+    height: 500px;
+    /* choose height you like */
+}
+
+.carousel-item img {
+    height: 110%;
+    width: 110%;
+    object-fit: cover;
+}
+
+.pad {
+    padding: 10px;
+
+}
+
+.corner {
+    border-radius: 10px;
+}
+
+.clr {
+    background-color: #edede8;
+    background-size: cover;
 }
